@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowmiya Enterprises | Genuine Nestlé Products & Coffee Vending Distributor Tirupati</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sowmiya Enterprises - Tirupati's premier B2B distributor of genuine Nestlé chocolates, Nescafé coffee powder, beverage premixes, milk powders, and coffee vending machines across Andhra Pradesh since 2018.">
+    <meta name="keywords" content="Chocolate distributor Tirupati, Coffee supplier Tirupati, Coffee vending machine Andhra Pradesh, FMCG distributor Tirupati, Nescafé supplier, KitKat wholesale Tirupati, Sowmiya Enterprises">
+    <meta name="theme-color" content="#4A2818">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            50: '#FDFBF7',
+                            100: '#F4EBE1',
+                            200: '#E5D3B3',
+                            700: '#5C3420',
+                            800: '#4A2818',
+                            900: '#3D2314',
+                            950: '#2A160E',
+                            990: '#180B06',
+                        },
+                        cream: '#FDFBF7',
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            hover: '#C59F27',
+                            light: '#F8F0D0',
+                            dark: '#A68318'
+                        },
+                        tilakRed: '#A91D22',
+                        charcoal: '#1A1A1A'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'gold-glow': '0 0 25px rgba(212, 175, 55, 0.35)',
+                        'gold-lg': '0 10px 30px -5px rgba(212, 175, 55, 0.4)',
+                        'card-lift': '0 20px 40px -15px rgba(42, 22, 14, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FDFBF7; color: #1A1A1A; overflow-x: hidden; }
+        
+        /* Smooth Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FDFBF7; }
+        ::-webkit-scrollbar-thumb { background: #4A2818; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #2A160E; }
+
+        /* --- 3D NAMAM ANIMATION CSS --- */
+        #namam-intro {
+            perspective: 1000px;
+        }
+        
+        .namam-card {
+            transform-style: preserve-3d;
+            animation: emergeNamam 2.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes emergeNamam {
+            0% {
+                opacity: 0;
+                transform: scale(0.6) rotateX(25deg) translateZ(-200px);
+                filter: brightness(0.4) blur(4px);
+            }
+            40% {
+                opacity: 1;
+                filter: brightness(1.2) blur(0px);
+            }
+            70% {
+                transform: scale(1.05) rotateX(0deg) translateZ(50px);
+                box-shadow: 0 0 60px rgba(212, 175, 55, 0.8), 0 0 100px rgba(169, 29, 34, 0.4);
+            }
+            100% {
+                transform: scale(1) rotateX(0deg) translateZ(0px);
+                box-shadow: 0 0 40px rgba(212, 175, 55, 0.5);
+            }
+        }
+
+        .namam-u-white {
+            background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 85%, #D9D9D9 100%);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2), 0 4px 15px rgba(255,255,255,0.6);
+        }
+
+        .namam-tilak-red {
+            background: linear-gradient(180deg, #D62828 0%, #A91D22 60%, #780000 100%);
+            box-shadow: 0 0 12px rgba(169, 29, 34, 0.8);
+        }
+
+        .namam-frame {
+            background: radial-gradient(circle at 30% 30%, #FFE885 0%, #D4AF37 50%, #8A6D1C 100%);
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.5), 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        /* --- STEAM ANIMATION --- */
+        .steam-container {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+        }
+        .steam-line {
+            width: 4px;
+            height: 25px;
+            background: linear-gradient(to top, rgba(255,255,255,0.7), transparent);
+            border-radius: 50%;
+            animation: steamRise 2s infinite ease-out;
+            filter: blur(2px);
+        }
+        .steam-line:nth-child(2) { animation-delay: 0.4s; height: 35px; }
+        .steam-line:nth-child(3) { animation-delay: 0.8s; }
+
+        @keyframes steamRise {
+            0% { transform: translateY(10px) scaleX(1); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-30px) scaleX(2.5); opacity: 0; }
+        }
+
+        /* Glassmorphism utility */
+        .glass-dark {
+            background: rgba(24, 11, 6, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .glass-card {
+            background: rgba(253, 251, 247, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .hills-silhouette {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="%232A160E" fill-opacity="0.7"></path><path d="M0,30 C200,110 450,20 700,90 C900,140 1050,40 1200,70 L1200,120 L0,120 Z" fill="%23180B06"></path></svg>');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .namam-card, .steam-line { animation: none !important; }
+        }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen relative selection:bg-gold selection:text-coffee-950">
+
+    <!-- 2. OPENING ANIMATION – REALISTIC 3D TIRUMALA NAMAM INTRO -->
+    <div id="namam-intro" class="fixed inset-0 z-50 bg-coffee-990 flex flex-col items-center justify-center p-4 transition-opacity duration-700 ease-out">
+        <div class="relative flex flex-col items-center max-w-sm text-center">
+            
+            <!-- 3D Namam Emblem Frame -->
+            <div class="namam-card relative w-52 h-52 sm:w-64 sm:h-64 rounded-full namam-frame p-3 flex items-center justify-center shadow-2xl mb-6">
+                <!-- Inner Dark Background -->
+                <div class="w-full h-full rounded-full bg-coffee-950 border-2 border-gold/40 flex flex-col items-center justify-center relative overflow-hidden shadow-inner">
+                    
+                    <!-- Subtle Radiant Backdrop -->
+                    <div class="absolute inset-0 bg-radial-gradient from-gold/20 via-transparent to-transparent"></div>
+
+                    <!-- Realistic White U-Tilak (Sricharanam) -->
+                    <div class="relative w-28 h-36 sm:w-36 sm:h-44 flex justify-center items-end pb-2">
+                        <!-- Left White Outer Arm -->
+                        <div class="w-7 sm:w-9 h-28 sm:h-34 namam-u-white rounded-t-full rounded-b-sm transform -rotate-6"></div>
+                        
+                        <!-- Base U Bridge -->
+                        <div class="w-16 sm:w-20 h-10 sm:h-12 namam-u-white rounded-b-3xl -mx-3 -mb-1"></div>
+                        
+                        <!-- Right White Outer Arm -->
+                        <div class="w-7 sm:w-9 h-28 sm:h-34 namam-u-white rounded-t-full rounded-b-sm transform rotate-6"></div>
+
+                        <!-- Central Red Kumkum Mark (Sricharanam center) -->
+                        <div class="absolute bottom-3 w-4 sm:w-5 h-20 sm:h-24 namam-tilak-red rounded-t-full rounded-b-xs shadow-lg z-10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography & Welcome Tag -->
+            <div class="space-y-2">
+                <span class="text-gold text-xs tracking-widest font-bold uppercase flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-gopuram text-gold"></i> BLESSED TIRUPATI AP
+                </span>
+                <h2 class="text-xl sm:text-2xl font-serif font-bold text-cream tracking-wide">
+                    SOWMIYA ENTERPRISES
+                </h2>
+                <p class="text-xs text-coffee-200 font-light tracking-wider">
+                    Nestlé Line Distributor & Coffee Vending Solutions
+                </p>
+            </div>
+
+            <!-- Skip Button -->
+            <button onclick="dismissIntro()" class="mt-6 text-[11px] text-coffee-200 hover:text-gold border border-gold/30 hover:border-gold px-4 py-1.5 rounded-full backdrop-blur-md transition-all">
+                Skip Intro <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- 1. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-coffee-990 text-gold-light text-xs py-2 px-4 border-b border-gold/30 relative z-30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2.5">
+                <span class="bg-gold/20 text-gold px-2 py-0.5 rounded text-[10px] font-extrabold border border-gold/40 flex items-center gap-1 uppercase tracking-wider">
+                    <i class="fa-solid fa-gopuram"></i> Tirupati HQ
+                </span>
+                <span class="hidden sm:inline text-coffee-700">|</span>
+                <span class="text-xs font-medium text-cream"><i class="fa-solid fa-hands-praying text-gold me-1"></i> Divine Blessings of Tirumala • Direct Stockist Serving All AP Districts Since 2018</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-semibold">
+                <a href="tel:9390488777" class="hover:text-gold transition-colors flex items-center gap-1 text-cream">
+                    <i class="fa-solid fa-phone text-gold"></i> +91 9390488777
+                </a>
+                <span class="text-coffee-700">|</span>
+                <a href="https://wa.me/919390488777?text=Hello%20Sowmiya%20Enterprises%2C%20I%20would%20like%20to%20enquire%20about%20your%20products%2C%20distribution%20services%20or%20coffee%20vending%20machines." 
+                   target="_blank" 
+                   class="bg-emerald-700 hover:bg-emerald-600 text-white px-2.5 py-0.5 rounded-md font-bold flex items-center gap-1 transition-all shadow">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY GLASSMORPHISM NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 glass-dark text-white shadow-2xl border-b border-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO TEXT -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold via-amber-500 to-amber-800 flex items-center justify-center text-coffee-950 font-bold text-2xl shadow-gold-glow border border-yellow-200 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-lg sm:text-xl font-extrabold tracking-wider text-cream group-hover:text-gold transition-colors">
+                            SOWMIYA ENTERPRISES
+                        </span>
+                        <span class="text-[10px] sm:text-xs text-gold/90 font-semibold tracking-wider flex items-center gap-1 uppercase">
+                            <span>Genuine Nestlé Line Distributor</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV LINKS -->
+                <nav class="hidden xl:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider text-coffee-100">
+                    <a href="#home" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Home</a>
+                    <a href="#about" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">About Us</a>
+                    <a href="#products" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">B2B Products</a>
+                    <a href="#vending" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Coffee Vending</a>
+                    <a href="#godown" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Godown Facility</a>
+                    <a href="#technician" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Technician Support</a>
+                    <a href="#clients" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Who We Serve</a>
+                    <a href="#faq" class="hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">FAQ</a>
+                </nav>
+
+                <!-- B2B QUOTE DRAWER TRIGGER & CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <button onclick="toggleCartDrawer()" class="relative bg-coffee-950 border border-gold/40 hover:border-gold text-gold font-bold px-3.5 py-2 rounded-xl text-xs flex items-center gap-2 shadow hover:bg-coffee-800 transition-all">
+                        <i class="fa-solid fa-cart-flatbed text-base"></i>
+                        <span>B2B Quote Drawer</span>
+                        <span id="cart-badge-count" class="bg-gold text-coffee-950 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-extrabold">0</span>
+                    </button>
+                    <a href="#contact" class="bg-gradient-to-r from-gold to-amber-500 hover:from-amber-500 hover:to-gold text-coffee-950 font-extrabold px-4 py-2 rounded-xl text-xs shadow-gold-glow transition-all transform hover:-translate-y-0.5">
+                        Enquire Supply
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="xl:hidden flex items-center gap-2">
+                    <button onclick="toggleCartDrawer()" class="relative bg-coffee-950 text-gold p-2 rounded-lg border border-gold/30">
+                        <i class="fa-solid fa-cart-flatbed text-lg"></i>
+                        <span id="cart-badge-count-mobile" class="absolute -top-1 -right-1 bg-gold text-coffee-950 w-4 h-4 rounded-full flex items-center justify-center text-[9px] font-extrabold">0</span>
+                    </button>
+                    <button id="mobile-menu-btn" type="button" class="text-cream hover:text-gold p-2 rounded-md focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION DRAWER -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-coffee-950 border-b border-gold/30 px-4 pt-3 pb-6 space-y-2 text-sm font-medium">
+            <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">Home</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">About Sowmiya Enterprises</a>
+            <a href="#products" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">B2B Products & Order Builder</a>
+            <a href="#vending" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">Coffee Vending Machines</a>
+            <a href="#godown" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">Tirupati Godown Facility</a>
+            <a href="#technician" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">Technician Support</a>
+            <a href="#clients" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">Who We Serve</a>
+            <a href="#faq" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">FAQ</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-cream hover:bg-coffee-800 hover:text-gold">Contact Us</a>
+            <div class="pt-3 flex flex-col gap-2">
+                <a href="tel:9390488777" class="w-full text-center bg-coffee-800 text-gold font-bold py-2.5 rounded-lg text-sm border border-gold/30">
+                    <i class="fa-solid fa-phone me-2"></i> Call: 9390488777
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- 3. MAIN HERO SECTION WITH COFFEE VIDEO & STEAM ANIMATION -->
+        <section id="home" class="relative text-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[88vh] flex items-center bg-coffee-950">
+            
+            <!-- Video / Visual Canvas Background -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <!-- Video Asset with CSS Graceful Fallback Overlay -->
+                <video id="hero-coffee-video" autoplay loop muted playsinline class="w-full h-full object-cover opacity-35 scale-105 filter blur-[1px]">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-coffee-poured-into-a-cup-in-slow-motion-21528-large.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-r from-coffee-990 via-coffee-950/90 to-coffee-900/80"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-coffee-950/60 to-coffee-990"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                
+                <!-- LEFT HERO CONTENT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <div class="inline-flex items-center gap-2 bg-gradient-to-r from-gold/25 via-yellow-500/10 to-transparent border border-gold/40 px-4 py-1.5 rounded-full text-xs font-semibold text-gold shadow-lg backdrop-blur-md">
+                        <i class="fa-solid fa-gopuram text-gold"></i>
+                        <span>Your Trusted Nestlé Distribution Partner</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-cream leading-tight tracking-tight">
+                        Quality Products, Dependable Supply, & <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-200 to-gold">Coffee Vending Solutions</span> Across AP
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-coffee-100 max-w-2xl font-light leading-relaxed">
+                        Supplying genuine Nestlé chocolates, Nescafé coffee powder, Nestea premixes, dairy whitener, and commercial vending machines to offices, CA firms, factories, and railway vendors across Andhra Pradesh.
+                    </p>
+
+                    <!-- THREE PROMINENT CTA BUTTONS -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#products" class="w-full sm:w-auto bg-gradient-to-r from-gold via-amber-400 to-gold hover:from-amber-400 hover:to-gold text-coffee-950 font-extrabold px-7 py-3.5 rounded-xl shadow-gold-glow transition-all duration-200 text-center flex items-center justify-center gap-2 text-sm transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-boxes-stacked"></i> Explore Products
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto bg-cream/10 hover:bg-cream/20 text-cream border border-gold/50 font-bold px-7 py-3.5 rounded-xl transition-all duration-200 text-center flex items-center justify-center gap-2 text-sm backdrop-blur-sm">
+                            <i class="fa-solid fa-paper-plane text-gold"></i> Request a Quote
+                        </a>
+                        <a href="https://wa.me/919390488777?text=Hello%20Sowmiya%20Enterprises%2C%20I%20would%20like%20to%20enquire%20about%20your%20products%2C%20distribution%20services%20or%20coffee%20vending%20machines." target="_blank" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition-all duration-200 text-center flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Us
+                        </a>
+                    </div>
+
+                    <!-- TRUST BANNER HIGHLIGHT -->
+                    <div class="pt-8 grid grid-cols-3 gap-3 text-left border-t border-white/10 max-w-xl">
+                        <div class="bg-coffee-950/80 p-3 sm:p-3.5 rounded-xl border border-gold/20 backdrop-blur-sm">
+                            <span class="block text-xl sm:text-2xl font-serif font-bold text-gold">2018</span>
+                            <span class="text-xs font-semibold text-white">Established</span>
+                            <span class="block text-[10px] text-gray-300">Tirupati Headquarters</span>
+                        </div>
+                        <div class="bg-coffee-950/80 p-3 sm:p-3.5 rounded-xl border border-gold/20 backdrop-blur-sm">
+                            <span class="block text-xl sm:text-2xl font-serif font-bold text-gold">100%</span>
+                            <span class="text-xs font-semibold text-white">Genuine Stock</span>
+                            <span class="block text-[10px] text-gray-300">Fresh Batch Control</span>
+                        </div>
+                        <div class="bg-coffee-950/80 p-3 sm:p-3.5 rounded-xl border border-gold/20 backdrop-blur-sm">
+                            <span class="block text-xl sm:text-2xl font-serif font-bold text-gold">All AP</span>
+                            <span class="text-xs font-semibold text-white">District Supply</span>
+                            <span class="block text-[10px] text-gray-300">Fast Route Delivery</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE COFFEE STEAM ART & STOCK SUMMARY -->
+                <div class="lg:col-span-5">
+                    <div class="relative bg-gradient-to-b from-coffee-900 to-coffee-950 p-6 sm:p-8 rounded-3xl border-2 border-gold/40 shadow-2xl space-y-6">
+                        
+                        <!-- STEAM ANIMATED COFFEE ICON -->
+                        <div class="relative flex items-center justify-between border-b border-gold/30 pb-4">
+                            <div>
+                                <span class="text-xs text-gold font-bold uppercase tracking-wider">Tirupati Commercial Stockist</span>
+                                <h3 class="text-2xl font-serif font-bold text-cream">Sowmiya Enterprises</h3>
+                            </div>
+                            
+                            <div class="relative w-14 h-14 rounded-2xl bg-gold/20 border border-gold flex items-center justify-center text-gold text-2xl shadow-gold-glow">
+                                <!-- Animated Coffee Steam -->
+                                <div class="steam-container">
+                                    <div class="steam-line"></div>
+                                    <div class="steam-line"></div>
+                                    <div class="steam-line"></div>
+                                </div>
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT CATEGORIES HIGHLIGHT LIST -->
+                        <div class="space-y-2.5 text-xs">
+                            <p class="text-coffee-200 font-semibold uppercase tracking-wider">Product Lines Handled:</p>
+                            
+                            <div class="bg-coffee-990/90 p-3 rounded-xl border border-gold/20 flex items-center justify-between">
+                                <span class="font-bold text-gold flex items-center gap-2"><i class="fa-solid fa-cookie"></i> Chocolates</span>
+                                <span class="text-cream text-[11px]">KitKat, Munch, Milkybar</span>
+                            </div>
+                            <div class="bg-coffee-990/90 p-3 rounded-xl border border-gold/20 flex items-center justify-between">
+                                <span class="font-bold text-gold flex items-center gap-2"><i class="fa-solid fa-mug-saucer"></i> Coffee Powders</span>
+                                <span class="text-cream text-[11px]">Nescafé Coffee Powders & Mixes</span>
+                            </div>
+                            <div class="bg-coffee-990/90 p-3 rounded-xl border border-gold/20 flex items-center justify-between">
+                                <span class="font-bold text-gold flex items-center gap-2"><i class="fa-solid fa-glass-water"></i> Beverages</span>
+                                <span class="text-cream text-[11px]">Nestea, Lemon Tea, Milk Whitener</span>
+                            </div>
+                            <div class="bg-coffee-990/90 p-3 rounded-xl border border-gold/20 flex items-center justify-between">
+                                <span class="font-bold text-gold flex items-center gap-2"><i class="fa-solid fa-cash-register"></i> Vending Machines</span>
+                                <span class="text-cream text-[11px]">Commercial & Office Dispensers</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 border-t border-gold/20 flex items-center justify-between text-xs text-coffee-200">
+                            <span><i class="fa-solid fa-user-check text-gold me-1"></i> Mr. V. Sundareshan & Sangeetha</span>
+                            <span class="text-gold font-bold">Tirupati, AP</span>
+                        </div>
+
+                        <a href="tel:9390488777" class="w-full bg-gold hover:bg-gold-hover text-coffee-950 font-extrabold py-3 rounded-xl flex items-center justify-center gap-2 transition text-xs shadow-gold-glow">
+                            <i class="fa-solid fa-phone me-1"></i> Direct Call: 9390488777
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 h-16 hills-silhouette pointer-events-none"></div>
+        </section>
+
+        <!-- 4. ABOUT US SECTION -->
+        <section id="about" class="py-16 sm:py-24 bg-cream border-b border-coffee-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-flex items-center gap-2 bg-coffee-100 text-coffee-800 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider border border-coffee-200">
+                            <i class="fa-solid fa-handshake text-gold"></i> About Sowmiya Enterprises
+                        </div>
+                        
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950 leading-snug">
+                            Family-Managed Distribution Business Based in Tirupati
+                        </h2>
+
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                            Established in <strong>2018</strong> in the holy pilgrimage city of Tirupati, Andhra Pradesh, <strong>Sowmiya Enterprises</strong> is a trusted family-managed distribution enterprise founded and owned by <strong>Mr. V. Sundareshan</strong>, supported in operations by <strong>Sangeetha</strong>.
+                        </p>
+
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                            We specialize in supplying genuine chocolates, coffee powders, beverage premixes, milk powder, and commercial coffee vending machine solutions to business and institutional customers across Andhra Pradesh.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="bg-white p-4 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-md transition-shadow">
+                                <i class="fa-solid fa-users text-gold text-2xl mb-2"></i>
+                                <h3 class="font-bold text-coffee-950 text-sm">Family-Managed Integrity</h3>
+                                <p class="text-xs text-gray-600 mt-1">Direct oversight by V. Sundareshan & Sangeetha ensures prompt delivery and genuine product guarantees.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-md transition-shadow">
+                                <i class="fa-solid fa-warehouse text-gold text-2xl mb-2"></i>
+                                <h3 class="font-bold text-coffee-950 text-sm">Tirupati Godown Facility</h3>
+                                <p class="text-xs text-gray-600 mt-1">Active physical warehouse stocking bulk cases of chocolates, coffee powders, and vending units.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT HIGHLIGHT CARD -->
+                    <div class="lg:col-span-6">
+                        <div class="bg-coffee-800 text-white rounded-3xl p-8 border-2 border-gold/30 shadow-2xl relative overflow-hidden space-y-6">
+                            
+                            <div class="flex items-center justify-between border-b border-gold/30 pb-4">
+                                <div>
+                                    <h3 class="text-2xl font-serif font-bold text-gold">Key Business Strengths</h3>
+                                    <p class="text-xs text-coffee-200">Serving Commercial & Institutional Clients</p>
+                                </div>
+                                <i class="fa-solid fa-certificate text-3xl text-gold"></i>
+                            </div>
+
+                            <ul class="space-y-4 text-sm text-coffee-100">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                    <span><strong>Genuine Product Lines:</strong> KitKat, Milkybar, Munch, Nescafé coffee powder, Nestea, Signature Lemon Tea, and milk whitener.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                    <span><strong>Vending Machine Setup:</strong> Supply, installation, and premix supply for corporate offices, CA firms, factories, and railway station stalls.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                    <span><strong>Technician Support:</strong> Dedicated maintenance, operational guidance, and machine service assistance.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                    <span><strong>AP Regional Coverage:</strong> Serving Tirupati, Chittoor, Nellore, Kadapa, Anantapur, Vijayawada, Visakhapatnam, and all AP districts.</span>
+                                </li>
+                            </ul>
+
+                            <div class="pt-4 border-t border-gold/20 flex items-center justify-between">
+                                <span class="text-xs text-coffee-200">Contact Founder: V. Sundareshan</span>
+                                <a href="tel:9390488777" class="text-gold font-bold hover:underline text-sm">+91 9390488777</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PRODUCT CATALOGUE & B2B ORDER BUILDER -->
+        <section id="products" class="py-16 sm:py-24 bg-coffee-100/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-coffee-700 bg-coffee-200/80 px-3 py-1 rounded-md border border-coffee-300">Genuine Nestlé & Beverage Stock</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950">Commercial Product Catalogue & Order Builder</h2>
+                    <p class="text-gray-600 text-sm sm:text-base">
+                        Select product lines, adjust quantities, and click <strong>"Add to B2B Order"</strong> to generate a structured WhatsApp quotation request!
+                    </p>
+                </div>
+
+                <!-- CATEGORY FILTER TABS -->
+                <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                    <button onclick="filterCategory('all')" class="cat-btn active bg-coffee-800 text-gold font-bold px-4 py-2 rounded-xl text-xs shadow transition-all border border-gold/30" data-cat="all">All Products</button>
+                    <button onclick="filterCategory('chocolates')" class="cat-btn bg-white hover:bg-coffee-100 text-coffee-900 font-bold px-4 py-2 rounded-xl text-xs border border-coffee-200 transition-all" data-cat="chocolates">Chocolates</button>
+                    <button onclick="filterCategory('coffee')" class="cat-btn bg-white hover:bg-coffee-100 text-coffee-900 font-bold px-4 py-2 rounded-xl text-xs border border-coffee-200 transition-all" data-cat="coffee">Coffee Products</button>
+                    <button onclick="filterCategory('beverages')" class="cat-btn bg-white hover:bg-coffee-100 text-coffee-900 font-bold px-4 py-2 rounded-xl text-xs border border-coffee-200 transition-all" data-cat="beverages">Beverages & Premixes</button>
+                    <button onclick="filterCategory('dairy')" class="cat-btn bg-white hover:bg-coffee-100 text-coffee-900 font-bold px-4 py-2 rounded-xl text-xs border border-coffee-200 transition-all" data-cat="dairy">Milk Powder & Dairy</button>
+                    <button onclick="filterCategory('vending')" class="cat-btn bg-white hover:bg-coffee-100 text-coffee-900 font-bold px-4 py-2 rounded-xl text-xs border border-coffee-200 transition-all" data-cat="vending">Vending Machines</button>
+                </div>
+
+                <!-- PRODUCTS GRID -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="products-grid">
+                    
+                    <!-- PRODUCT 1: KITKAT -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="chocolates">
+                        <div>
+                            <div class="h-48 bg-coffee-50 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=600&auto=format&fit=crop" alt="KitKat Chocolates Bulk Supply" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-coffee-800 text-gold text-[10px] font-extrabold px-2.5 py-1 rounded-md border border-gold/30">Chocolates</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">KitKat Chocolates</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Crispy wafer covered in smooth chocolate. Ideal for retail counters, railway station stalls, and office pantries.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Pack Info:</span>
+                                    <span class="font-bold text-coffee-950">Bulk Carton Cases</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('KitKat Chocolates', 'Chocolates')" class="w-full bg-coffee-800 hover:bg-coffee-950 text-gold font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 border border-gold/30 shadow">
+                                <i class="fa-solid fa-plus"></i> Add to B2B Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 2: MILKYBAR -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="chocolates">
+                        <div>
+                            <div class="h-48 bg-cream relative overflow-hidden flex items-center justify-center p-4">
+                                <!-- Elegant photograph of creamy white milk chocolate chunks on ivory background -->
+                                <img src="https://images.unsplash.com/photo-1582176647444-3e586700ea90?q=80&w=600&auto=format&fit=crop" alt="Milkybar White Chocolate Bulk" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-coffee-800 text-gold text-[10px] font-extrabold px-2.5 py-1 rounded-md border border-gold/30">Chocolates</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">Milkybar Chocolates</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Deliciously creamy white chocolate bars supplied in wholesale case packs for distribution across AP.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Pack Info:</span>
+                                    <span class="font-bold text-coffee-950">Case / Box Options</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('Milkybar Chocolates', 'Chocolates')" class="w-full bg-coffee-800 hover:bg-coffee-950 text-gold font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 border border-gold/30 shadow">
+                                <i class="fa-solid fa-plus"></i> Add to B2B Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 3: MUNCH -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="chocolates">
+                        <div>
+                            <div class="h-48 bg-coffee-50 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?q=80&w=600&auto=format&fit=crop" alt="Munch Wafer Chocolates" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-coffee-800 text-gold text-[10px] font-extrabold px-2.5 py-1 rounded-md border border-gold/30">Chocolates</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">Munch Chocolates</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Crunchy chocolate wafer bars with high consumer demand across commercial retail establishments.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Pack Info:</span>
+                                    <span class="font-bold text-coffee-950">Wholesale Box / Cartons</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('Munch Chocolates', 'Chocolates')" class="w-full bg-coffee-800 hover:bg-coffee-950 text-gold font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 border border-gold/30 shadow">
+                                <i class="fa-solid fa-plus"></i> Add to B2B Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 4: NESCAFÉ COFFEE POWDER -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="coffee">
+                        <div>
+                            <div class="h-48 bg-coffee-50 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Nescafé Coffee Powder" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-coffee-800 text-gold text-[10px] font-extrabold px-2.5 py-1 rounded-md border border-gold/30">Coffee Products</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">Nescafé Coffee Powder</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Instant coffee powder and specialized vending mixes for office pantries, CA firms, and commercial machines.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Pack Info:</span>
+                                    <span class="font-bold text-coffee-950">Commercial Pouches / Bags</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('Nescafé Coffee Powder', 'Coffee Products')" class="w-full bg-coffee-800 hover:bg-coffee-950 text-gold font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 border border-gold/30 shadow">
+                                <i class="fa-solid fa-plus"></i> Add to B2B Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 5: NESTEA INSTANT TEA -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="beverages">
+                        <div>
+                            <div class="h-48 bg-coffee-50 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=600&auto=format&fit=crop" alt="Nestea Premix Supplies" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-coffee-800 text-gold text-[10px] font-extrabold px-2.5 py-1 rounded-md border border-gold/30">Beverages</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">Nestea Premixes</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Instant tea premixes and iced tea formulations designed for fast dispensing in office pantries.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Pack Info:</span>
+                                    <span class="font-bold text-coffee-950">Vending Premix Bags</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('Nestea Premixes', 'Beverages')" class="w-full bg-coffee-800 hover:bg-coffee-950 text-gold font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 border border-gold/30 shadow">
+                                <i class="fa-solid fa-plus"></i> Add to B2B Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 6: SIGNATURE LEMON TEA -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="beverages">
+                        <div>
+                            <div class="h-48 bg-coffee-50 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=600&auto=format&fit=crop" alt="Signature Lemon Tea Premix" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-coffee-800 text-gold text-[10px] font-extrabold px-2.5 py-1 rounded-md border border-gold/30">Beverages</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">Signature Lemon Tea Premix</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Refreshing lemon tea premix formulated for automated coffee and tea vending machine canisters.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Pack Info:</span>
+                                    <span class="font-bold text-coffee-950">1kg Premix Packs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('Signature Lemon Tea Premix', 'Beverages')" class="w-full bg-coffee-800 hover:bg-coffee-950 text-gold font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 border border-gold/30 shadow">
+                                <i class="fa-solid fa-plus"></i> Add to B2B Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 7: MILK WHITENER / DAIRY POWDER -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="dairy">
+                        <div>
+                            <div class="h-48 bg-coffee-50 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop" alt="Milk Whitener & Dairy Powder" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-coffee-800 text-gold text-[10px] font-extrabold px-2.5 py-1 rounded-md border border-gold/30">Milk Powder & Dairy</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">Milk Whitener & Dairy Powder</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">High-solubility dairy milk powder for rich taste in automated vending machine coffee and tea.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Pack Info:</span>
+                                    <span class="font-bold text-coffee-950">Commercial Bags / Pouches</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('Milk Whitener & Dairy Powder', 'Milk Powder & Dairy')" class="w-full bg-coffee-800 hover:bg-coffee-950 text-gold font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 border border-gold/30 shadow">
+                                <i class="fa-solid fa-plus"></i> Add to B2B Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 8: COFFEE VENDING MACHINE -->
+                    <div class="prod-card bg-white rounded-2xl border border-coffee-200 shadow-md hover:shadow-card-lift transition-all overflow-hidden flex flex-col justify-between" data-category="vending">
+                        <div>
+                            <div class="h-48 bg-coffee-50 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=600&auto=format&fit=crop" alt="Coffee Vending Machine Units" class="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-3 right-3 bg-gold text-coffee-950 text-[10px] font-extrabold px-2.5 py-1 rounded-md shadow">Vending Unit</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-coffee-950 text-base">Commercial Coffee Vending Machine</h3>
+                                <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Automatic hot beverage dispensing machines with installation support for workplaces & canteens.</p>
+                                <div class="mt-3 text-xs font-semibold text-coffee-800 bg-coffee-50 p-2 rounded-lg border border-coffee-200 flex items-center justify-between">
+                                    <span>Option:</span>
+                                    <span class="font-bold text-coffee-950">Unit Supply & Technician Setup</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="addToCart('Coffee Vending Machine Unit', 'Vending Machines')" class="w-full bg-gold hover:bg-gold-hover text-coffee-950 font-extrabold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 shadow-gold-glow">
+                                <i class="fa-solid fa-plus"></i> Add Machine to Order
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. TIRUPATI GODOWN & WAREHOUSE GALLERY SECTION -->
+        <section id="godown" class="py-16 sm:py-24 bg-cream border-t border-b border-coffee-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-coffee-800 bg-coffee-100 px-3 py-1 rounded-md border border-coffee-200">Authentic Infrastructure</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950">Inside Our Tirupati Distribution Facility</h2>
+                    <p class="text-gray-600 text-sm sm:text-base">
+                        Real facility photography of our Tirupati stockroom, dispatch counter, and vending machine inventory. Click any image to view in full resolution.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- GODOWN MAIN IMAGE CARD 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-coffee-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between group">
+                        <div class="h-72 bg-coffee-950 relative overflow-hidden cursor-pointer" onclick="openLightbox('WhatsApp Image 2026-11-04 at 8.59.34 PM (1).jpeg', 'Inside Our Tirupati Bulk Stock Room')">
+                            <img src="WhatsApp Image 2026-11-04 at 8.59.34 PM (1).jpeg" alt="Inside Our Tirupati Bulk Stock Room - Sowmiya Enterprises" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-coffee-950/90 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-gold/90 text-coffee-950 text-[10px] font-extrabold px-2.5 py-1 rounded-md shadow">
+                                <i class="fa-solid fa-expand me-1"></i> Expand View
+                            </span>
+                            <span class="absolute bottom-3 left-3 right-3 text-xs text-gold font-bold bg-coffee-950/90 p-2.5 rounded-xl border border-gold/30 backdrop-blur-sm">
+                                Tirupati Bulk Inventory Facility
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-coffee-950 text-base">Bulk Inventory Stock Room</h3>
+                            <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Active stock of Nescafé coffee powders, KitKat, Munch, Milkybar, and wrapped commercial coffee vending machines ready for customer dispatch across AP.</p>
+                        </div>
+                    </div>
+
+                    <!-- GODOWN SECONDARY IMAGE CARD 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden border border-coffee-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between group">
+                        <div class="h-72 bg-coffee-950 relative overflow-hidden cursor-pointer" onclick="openLightbox('WhatsApp Image 2026-11-04 at 8.59.34 PM.jpeg', 'Tirupati Dispatch Counter & Desk')">
+                            <img src="WhatsApp Image 2026-11-04 at 8.59.34 PM.jpeg" alt="Tirupati Office Counter & Desk - Sowmiya Enterprises" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-coffee-950/90 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-gold/90 text-coffee-950 text-[10px] font-extrabold px-2.5 py-1 rounded-md shadow">
+                                <i class="fa-solid fa-expand me-1"></i> Expand View
+                            </span>
+                            <span class="absolute bottom-3 left-3 right-3 text-xs text-gold font-bold bg-coffee-950/90 p-2.5 rounded-xl border border-gold/30 backdrop-blur-sm">
+                                Tirupati Office & Order Processing Desk
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-coffee-950 text-base">Order Processing & Dispatch Desk</h3>
+                            <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">Our Tirupati office counter handles order verification, spare parts inventory, and customer dispatch coordination.</p>
+                        </div>
+                    </div>
+
+                    <!-- FACILITY SUMMARY CARD -->
+                    <div class="bg-coffee-800 text-white rounded-3xl p-6 border-2 border-gold/40 shadow-xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-2xl bg-gold/20 border border-gold/40 flex items-center justify-center text-gold text-2xl shadow-gold-glow">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                            </div>
+                            <h3 class="font-serif font-bold text-gold text-xl">Stock Integrity & Batch Control</h3>
+                            <p class="text-xs text-coffee-100 leading-relaxed">
+                                We operate an active physical godown in Tirupati to maintain fresh inventory of chocolates, coffee premixes, and vending machines for corporate offices, CA firms, factories, and railway station clients.
+                            </p>
+                            <ul class="text-xs space-y-2.5 text-coffee-200 pt-2">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> Fresh batch monitoring & shelf-life integrity</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> Fast dispatch routes across all AP districts</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> Machine inspection & testing area</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 border-t border-gold/20 mt-4">
+                            <a href="#contact" class="block w-full text-center bg-gold hover:bg-gold-hover text-coffee-950 font-extrabold py-3 rounded-xl text-xs transition-colors shadow-gold-glow">
+                                Enquire Stock Availability
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LIGHTBOX MODAL FOR GODOWN GALLERY -->
+        <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+            <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-gold text-3xl font-bold z-50">&times;</button>
+            <div class="max-w-4xl w-full text-center space-y-4">
+                <img id="lightbox-img" src="" alt="Enlarged Godown View" class="max-h-[80vh] w-auto mx-auto rounded-2xl border-2 border-gold/50 shadow-2xl">
+                <p id="lightbox-caption" class="text-gold font-serif font-bold text-lg"></p>
+            </div>
+        </div>
+
+        <!-- 7. COFFEE VENDING SOLUTIONS & RECOMMENDER CALCULATOR -->
+        <section id="vending" class="py-16 sm:py-24 bg-coffee-950 text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="bg-gold/20 text-gold text-xs font-bold px-3 py-1 rounded-md border border-gold/40 uppercase tracking-wider">
+                            Vending Machine Solutions
+                        </span>
+
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-cream">
+                            Coffee Vending Machine Supply & Institutional Solutions
+                        </h2>
+
+                        <p class="text-coffee-100 text-sm sm:text-base leading-relaxed">
+                            Sowmiya Enterprises provides commercial coffee vending machines for office spaces, factories, canteens, CA firms, and railway station stalls across Andhra Pradesh.
+                        </p>
+
+                        <!-- INTERACTIVE VENDING MACHINE RECOMMENDER CALCULATOR -->
+                        <div class="bg-coffee-900 p-6 rounded-3xl border border-gold/30 space-y-4 shadow-2xl">
+                            <h3 class="font-serif font-bold text-gold text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-calculator text-gold"></i> Machine Recommendation Calculator
+                            </h3>
+                            <p class="text-xs text-coffee-200">Select your establishment type or daily consumption size:</p>
+
+                            <div class="space-y-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-white mb-1.5">Workplace Size / Expected Daily Cups:</label>
+                                    <select id="staff-size-select" onchange="recommendMachine()" class="w-full bg-coffee-800 border border-gold/30 text-white text-xs rounded-xl p-3 focus:ring-gold focus:border-gold font-medium">
+                                        <option value="small">CA Office / Small Workplace (10 - 25 Staff | 30 - 50 Cups Daily)</option>
+                                        <option value="medium">Corporate Office / Commercial Hub (25 - 80 Staff | 50 - 150 Cups Daily)</option>
+                                        <option value="large">Factory / Manufacturing Plant (100+ Staff | 200+ Cups Daily)</option>
+                                        <option value="railway">Railway Station Stall / High-Frequency Counter</option>
+                                    </select>
+                                </div>
+
+                                <div id="recommender-result" class="bg-coffee-950 p-4 rounded-2xl border border-gold/30 text-xs text-coffee-100 space-y-1.5">
+                                    <p class="font-bold text-gold text-sm" id="rec-title">Recommended: Dual-Option Coffee & Tea Machine</p>
+                                    <p class="text-[11px] text-gray-300 leading-relaxed" id="rec-desc">Compact dual-canister dispenser ideal for CA offices and professional workplaces requiring hot coffee and tea.</p>
+                                </div>
+                            </div>
+
+                            <button onclick="enquireRecommendedMachine()" class="w-full bg-gradient-to-r from-gold via-amber-400 to-gold hover:from-amber-400 hover:to-gold text-coffee-950 font-extrabold py-3 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 shadow-gold-glow">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Request Machine Quote via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT DISPLAY ARTWORK -->
+                    <div class="lg:col-span-6">
+                        <div class="bg-coffee-900 rounded-3xl p-6 border-2 border-gold/40 shadow-2xl relative space-y-4">
+                            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=800&auto=format&fit=crop" alt="Coffee Vending Machine Preparation" class="rounded-2xl w-full h-80 object-cover shadow-lg">
+                            
+                            <div class="pt-2 text-center">
+                                <span class="text-xs font-bold text-gold uppercase tracking-wider">Turnkey Commercial Solutions</span>
+                                <p class="text-sm font-serif text-cream mt-1">Machine Supply, Premix Stock & Dedicated Technician Assistance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 8. TECHNICIAN SERVICES SECTION -->
+        <section id="technician" class="py-16 sm:py-24 bg-cream border-b border-coffee-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="bg-white rounded-3xl border border-coffee-200 shadow-xl p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-8 space-y-4">
+                        <span class="bg-coffee-100 text-coffee-800 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider border border-coffee-200">
+                            <i class="fa-solid fa-wrench text-gold"></i> Dedicated Technician Support
+                        </span>
+
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-coffee-950">
+                            Technician Services & Maintenance Support
+                        </h2>
+
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                            Sowmiya Enterprises provides dedicated technician assistance for coffee vending machines to ensure continuous, reliable operation for our clients.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-gray-700 pt-2">
+                            <div class="bg-coffee-50 p-3 rounded-xl border border-coffee-200 flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+                                <span>Technician Support for Installed Units</span>
+                            </div>
+                            <div class="bg-coffee-50 p-3 rounded-xl border border-coffee-200 flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+                                <span>Machine Cleaning & Sanitation Guidance</span>
+                            </div>
+                            <div class="bg-coffee-50 p-3 rounded-xl border border-coffee-200 flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+                                <span>Canister & Extraction Troubleshooting</span>
+                            </div>
+                            <div class="bg-coffee-50 p-3 rounded-xl border border-coffee-200 flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+                                <span>Spare Parts & Service Enquiries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DIRECT TECHNICIAN CALL CARD -->
+                    <div class="lg:col-span-4 bg-coffee-800 text-white rounded-3xl p-6 text-center space-y-4 border-2 border-gold/30 shadow-2xl">
+                        <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 border border-gold flex items-center justify-center text-gold text-2xl">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-cream">Machine Service Required?</h3>
+                        <p class="text-xs text-coffee-200">Contact V. Sundareshan for technician support and machine service enquiries.</p>
+                        
+                        <a href="tel:9390488777" class="block w-full bg-gold hover:bg-gold-hover text-coffee-950 font-extrabold py-3 rounded-xl text-xs transition-colors shadow">
+                            <i class="fa-solid fa-phone me-1"></i> Direct Call: 9390488777
+                        </a>
+                        <a href="https://wa.me/919390488777?text=Hello%20Sowmiya%20Enterprises%2C%20I%20would%20like%20to%20enquire%20about%20coffee%20vending%20machine%20technician%20support%20or%20servicing." 
+                           target="_blank" class="block w-full bg-emerald-700 hover:bg-emerald-600 text-white font-bold py-2.5 rounded-xl text-xs transition-colors">
+                            <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp Technician Support
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 9. WHO WE SERVE SECTION -->
+        <section id="clients" class="py-16 sm:py-24 bg-coffee-100/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-coffee-800 bg-coffee-200/80 px-3 py-1 rounded-md border border-coffee-300">Target Sectors</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950">Who We Serve Across Andhra Pradesh</h2>
+                    <p class="text-gray-600 text-sm sm:text-base">
+                        Sowmiya Enterprises serves various commercial establishments and institutional customers across Tirupati, Chittoor, Nellore, Kadapa, Anantapur, Vijayawada, Visakhapatnam, and all AP districts.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-white p-6 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-card-lift transition-all space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-coffee-100 text-coffee-800 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-train"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-coffee-950">Railway Station Vendors</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Supplying chocolates, beverages, and premixes for high-volume railway station stalls.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-card-lift transition-all space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-coffee-100 text-coffee-800 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-coffee-950">CA Offices & Professional Firms</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Coffee powders and automatic vending machine solutions for Chartered Accountant offices.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-card-lift transition-all space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-coffee-100 text-coffee-800 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-coffee-950">Factories & Manufacturing Plants</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Vending machine supply and beverage powders for factory canteens and worker breakrooms.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-card-lift transition-all space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-coffee-100 text-coffee-800 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-coffee-950">Corporate Offices</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Regular beverage refills, coffee powders, and vending units for corporate pantries.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-card-lift transition-all space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-coffee-100 text-coffee-800 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-coffee-950">Commercial Outlets</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Dependable product supply for commercial outlets, retail counters, and local businesses.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-coffee-200 shadow-sm hover:shadow-card-lift transition-all space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-coffee-100 text-coffee-800 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-coffee-950">Institutional Facilities</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Beverage and coffee distribution for institutional canteens and educational facilities.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 10. FAQ ACCORDION SECTION -->
+        <section id="faq" class="py-16 sm:py-24 bg-cream border-t border-b border-coffee-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <div class="text-center space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-coffee-800 bg-coffee-100 px-3 py-1 rounded-md border border-coffee-200">Helpful Information</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950">Frequently Asked Questions</h2>
+                    <p class="text-gray-600 text-sm">Quick answers regarding B2B bulk orders, coffee vending machines, and AP delivery.</p>
+                </div>
+
+                <div class="space-y-4" id="faq-accordion">
+                    
+                    <div class="bg-white rounded-2xl border border-coffee-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-serif font-bold text-coffee-950 flex items-center justify-between hover:bg-coffee-50 transition-colors text-sm sm:text-base">
+                            <span>How do I place a wholesale bulk order with Sowmiya Enterprises?</span>
+                            <i class="fa-solid fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 border-t border-coffee-100 leading-relaxed">
+                            You can compile your required items directly using our <strong>B2B Order Drawer</strong> on this website, or contact Mr. V. Sundareshan via phone/WhatsApp at <strong>+91 9390488777</strong> to receive a direct quotation.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-coffee-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-serif font-bold text-coffee-950 flex items-center justify-between hover:bg-coffee-50 transition-colors text-sm sm:text-base">
+                            <span>Which districts in Andhra Pradesh do you deliver to?</span>
+                            <i class="fa-solid fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 border-t border-coffee-100 leading-relaxed">
+                            We dispatch from our main Tirupati facility to businesses in Tirupati, Chittoor, Nellore, Kadapa, Anantapur, Vijayawada, Visakhapatnam, and all surrounding AP districts.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-coffee-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-serif font-bold text-coffee-950 flex items-center justify-between hover:bg-coffee-50 transition-colors text-sm sm:text-base">
+                            <span>Do you provide coffee vending machines for CA offices and factories?</span>
+                            <i class="fa-solid fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 border-t border-coffee-100 leading-relaxed">
+                            Yes! We supply commercial hot beverage vending machine units along with coffee powder, tea premixes, milk whitener, and technician setup assistance.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-coffee-200 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-serif font-bold text-coffee-950 flex items-center justify-between hover:bg-coffee-50 transition-colors text-sm sm:text-base">
+                            <span>Are all product batches 100% genuine Nestlé lines?</span>
+                            <i class="fa-solid fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-600 border-t border-coffee-100 leading-relaxed">
+                            Absolutely. We are an authentic distributor based in Tirupati maintaining direct shelf-life and batch control for all chocolates, coffee powders, and premixes.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 11. CONTACT US SECTION & ENQUIRY FORM -->
+        <section id="contact" class="py-16 sm:py-24 bg-coffee-100/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-coffee-800 bg-coffee-200 px-3 py-1 rounded-md border border-coffee-300">Direct Business Contact</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-coffee-950">Contact Sowmiya Enterprises</h2>
+                    <p class="text-gray-600 text-sm sm:text-base">
+                        Get in touch for product supply enquiries, wholesale quotes, coffee vending machines, or technician support.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- DIRECT CONTACT DETAILS CARD -->
+                    <div class="lg:col-span-5 bg-coffee-800 text-white p-8 rounded-3xl shadow-2xl space-y-8 border-2 border-gold/30">
+                        <div>
+                            <span class="text-xs text-gold font-bold uppercase tracking-wider">Independent Distribution Business</span>
+                            <h3 class="text-2xl font-serif font-bold text-cream mt-1">SOWMIYA ENTERPRISES</h3>
+                        </div>
+
+                        <div class="space-y-5 text-sm">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/20 border border-gold/40 flex items-center justify-center text-gold flex-shrink-0">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-coffee-200">Proprietor & Founder</p>
+                                    <p class="font-bold text-white">Mr. V. Sundareshan</p>
+                                    <p class="text-xs text-coffee-200 mt-0.5">Operations managed with Sangeetha</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/20 border border-gold/40 flex items-center justify-center text-gold flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-coffee-200">Location & Stockroom</p>
+                                    <p class="font-bold text-white">Tirupati, Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/20 border border-gold/40 flex items-center justify-center text-gold flex-shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-coffee-200">Direct Phone Line</p>
+                                    <a href="tel:9390488777" class="font-extrabold text-gold hover:underline text-base">+91 9390488777</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-900/60 border border-emerald-500/40 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-coffee-200">WhatsApp Enquiry Chat</p>
+                                    <a href="https://wa.me/919390488777?text=Hello%20Sowmiya%20Enterprises%2C%20I%20would%20like%20to%20enquire%20about%20your%20products%2C%20distribution%20services%20or%20coffee%20vending%20machines.%20Please%20share%20the%20details." 
+                                       target="_blank" class="text-emerald-400 font-bold hover:underline text-xs">
+                                        Open Chat (+91 9390488777)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gold/20 flex flex-col gap-3">
+                            <a href="tel:9390488777" class="w-full bg-gold hover:bg-gold-hover text-coffee-950 font-extrabold py-3.5 rounded-xl text-center shadow-gold-glow text-xs transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-phone"></i> Direct Call (9390488777)
+                            </a>
+                            <a href="https://wa.me/919390488777?text=Hello%20Sowmiya%20Enterprises%2C%20I%20would%20like%20to%20enquire%20about%20your%20products%2C%20distribution%20services%20or%20coffee%20vending%20machines." 
+                               target="_blank" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-bold py-3.5 rounded-xl text-center shadow text-xs transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Enquiry
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FUNCTIONAL CONTACT ENQUIRY FORM -->
+                    <div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-coffee-200 shadow-xl">
+                        <h3 class="text-2xl font-serif font-bold text-coffee-950 mb-1">Send an Enquiry</h3>
+                        <p class="text-xs text-gray-600 mb-6">Fill in your business details below to generate an instant WhatsApp quote request.</p>
+
+                        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-coffee-950 mb-1" for="form-name">Customer / Contact Person Name *</label>
+                                    <input type="text" id="form-name" required placeholder="Your full name" class="w-full bg-coffee-50 border border-coffee-200 text-coffee-950 text-xs rounded-xl p-3 focus:ring-gold focus:border-gold">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-coffee-950 mb-1" for="form-company">Business / Company Name *</label>
+                                    <input type="text" id="form-company" required placeholder="Company / CA Office / Firm Name" class="w-full bg-coffee-50 border border-coffee-200 text-coffee-950 text-xs rounded-xl p-3 focus:ring-gold focus:border-gold">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-coffee-950 mb-1" for="form-mobile">Phone / Mobile Number *</label>
+                                    <input type="tel" id="form-mobile" required placeholder="10-digit mobile number" class="w-full bg-coffee-50 border border-coffee-200 text-coffee-950 text-xs rounded-xl p-3 focus:ring-gold focus:border-gold">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-coffee-950 mb-1" for="form-district">District / City *</label>
+                                    <input type="text" id="form-district" required placeholder="e.g. Tirupati / Chittoor / Nellore" class="w-full bg-coffee-50 border border-coffee-200 text-coffee-950 text-xs rounded-xl p-3 focus:ring-gold focus:border-gold">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-coffee-950 mb-1" for="form-product">Product or Service Required *</label>
+                                <select id="form-product" required class="w-full bg-coffee-50 border border-coffee-200 text-coffee-950 text-xs rounded-xl p-3 focus:ring-gold focus:border-gold font-medium">
+                                    <option value="Chocolates Supply (KitKat, Munch, Milkybar)">Chocolates Supply (KitKat, Munch, Milkybar)</option>
+                                    <option value="Coffee Products (Nescafé Coffee Powder & Mixes)">Coffee Products (Nescafé Coffee Powder & Mixes)</option>
+                                    <option value="Beverages & Premixes (Nestea, Lemon Tea, Milk Whitener)">Beverages & Premixes (Nestea, Lemon Tea, Milk Whitener)</option>
+                                    <option value="Coffee Vending Machine Supply & Installation">Coffee Vending Machine Supply & Installation</option>
+                                    <option value="Technician Service / Maintenance Support">Technician Service / Maintenance Support</option>
+                                    <option value="General Wholesale Distribution Enquiry">General Wholesale Distribution Enquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-coffee-950 mb-1" for="form-message">Enquiry Message</label>
+                                <textarea id="form-message" rows="3" placeholder="Specify carton quantities or machine installation details..." class="w-full bg-coffee-50 border border-coffee-200 text-coffee-950 text-xs rounded-xl p-3 focus:ring-gold focus:border-gold"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-gold via-amber-400 to-gold hover:from-amber-400 hover:to-gold text-coffee-950 font-extrabold py-3.5 rounded-xl shadow-gold-glow transition-colors flex items-center justify-center gap-2 text-xs">
+                                <i class="fa-brands fa-whatsapp text-emerald-900 text-lg"></i> Submit Enquiry via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 6. SLIDING B2B ORDER DRAWER (CART OVERLAY) -->
+    <div id="cart-drawer-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden transition-opacity" onclick="toggleCartDrawer()"></div>
+    
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-96 bg-coffee-900 text-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between shadow-2xl border-l border-gold/30">
+        
+        <div class="p-5 border-b border-gold/30 flex items-center justify-between bg-coffee-950">
+            <div class="flex items-center gap-2.5">
+                <i class="fa-solid fa-cart-flatbed text-gold text-xl"></i>
+                <div>
+                    <h3 class="font-serif font-bold text-cream text-base">Your B2B Quote Drawer</h3>
+                    <p class="text-[10px] text-coffee-200">Compile items for a instant quote</p>
+                </div>
+            </div>
+            <button onclick="toggleCartDrawer()" class="text-coffee-200 hover:text-white text-2xl font-bold">&times;</button>
+        </div>
+
+        <div class="p-5 flex-grow overflow-y-auto space-y-3" id="cart-items-container">
+            <p class="text-xs text-coffee-200 text-center py-8 italic" id="empty-cart-msg">Your quote drawer is empty. Click "+ Add to B2B Order" on products to build your custom wholesale request!</p>
+        </div>
+
+        <div class="p-5 border-t border-gold/30 bg-coffee-950 space-y-3">
+            <div class="flex justify-between items-center text-xs">
+                <span class="text-coffee-200">Total Product Lines:</span>
+                <span class="font-extrabold text-gold text-sm" id="cart-total-lines">0 Lines</span>
+            </div>
+
+            <button onclick="sendCartWhatsApp()" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-extrabold py-3 rounded-xl text-xs shadow transition-colors flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i> Export Order to WhatsApp
+            </button>
+            <button onclick="clearCart()" class="w-full bg-coffee-800 hover:bg-coffee-700 text-coffee-200 text-[11px] py-1.5 rounded-lg transition-colors">
+                Clear Quote Drawer
+            </button>
+        </div>
+
+    </div>
+
+    <!-- 9. AUTOMATED CUSTOMER QUERIES CHATBOT WIDGET -->
+    <div id="chatbot-widget" class="fixed bottom-6 right-6 z-40 flex flex-col items-end">
+        
+        <!-- Chat Window Modal -->
+        <div id="chat-window" class="hidden w-80 sm:w-96 bg-white rounded-3xl border-2 border-gold/40 shadow-2xl overflow-hidden mb-4 flex flex-col text-coffee-950 transition-all duration-300">
+            <!-- Header -->
+            <div class="bg-coffee-950 text-white p-4 border-b border-gold/30 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-gold text-coffee-950 flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-cream text-xs sm:text-sm">Sowmiya Assistant</h4>
+                        <span class="text-[9px] text-gold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Automated Assistant</span>
+                    </div>
+                </div>
+                <button onclick="toggleChatbot()" class="text-coffee-200 hover:text-white font-bold text-lg">&times;</button>
+            </div>
+
+            <!-- Chat Logs Area -->
+            <div id="chat-logs" class="p-4 h-72 overflow-y-auto space-y-3 bg-coffee-50/50 text-xs">
+                <div class="bg-coffee-100 border border-coffee-200 p-3 rounded-2xl rounded-tl-none text-coffee-950 space-y-1">
+                    <p class="font-bold text-coffee-900">Hello! Welcome to Sowmiya Enterprises.</p>
+                    <p class="text-[11px] text-gray-700">I am an automated assistant. How can I help you regarding our Nestlé product distribution or coffee vending solutions?</p>
+                </div>
+            </div>
+
+            <!-- Quick Reply Buttons -->
+            <div class="p-2.5 bg-coffee-100/50 border-t border-coffee-200 flex flex-wrap gap-1.5">
+                <button onclick="botQuickReply('products')" class="text-[10px] bg-white hover:bg-gold hover:text-coffee-950 text-coffee-900 font-bold border border-coffee-300 px-2.5 py-1 rounded-full transition-colors">📦 Products</button>
+                <button onclick="botQuickReply('bulk')" class="text-[10px] bg-white hover:bg-gold hover:text-coffee-950 text-coffee-900 font-bold border border-coffee-300 px-2.5 py-1 rounded-full transition-colors">🚚 Bulk Order</button>
+                <button onclick="botQuickReply('vending')" class="text-[10px] bg-white hover:bg-gold hover:text-coffee-950 text-coffee-900 font-bold border border-coffee-300 px-2.5 py-1 rounded-full transition-colors">☕ Vending</button>
+                <button onclick="botQuickReply('technician')" class="text-[10px] bg-white hover:bg-gold hover:text-coffee-950 text-coffee-900 font-bold border border-coffee-300 px-2.5 py-1 rounded-full transition-colors">🔧 Service</button>
+            </div>
+
+            <!-- Chat Input Bar -->
+            <div class="p-3 bg-white border-t border-coffee-200 flex gap-2">
+                <input type="text" id="chat-user-input" onkeypress="handleChatKeyPress(event)" placeholder="Ask about products, vending, contact..." class="w-full bg-coffee-50 border border-coffee-200 text-xs rounded-xl px-3 py-2 focus:ring-gold focus:border-gold">
+                <button onclick="sendChatMessage()" class="bg-coffee-800 hover:bg-coffee-950 text-gold px-3.5 py-2 rounded-xl text-xs font-bold transition-colors">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Floating Chat Button -->
+        <button onclick="toggleChatbot()" class="bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl border-2 border-white flex items-center justify-center transition-all transform hover:scale-110">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </button>
+    </div>
+
+    <!-- 12. PROFESSIONAL FOOTER WITH MANDATORY TRADEMARK DISCLAIMER -->
+    <footer class="bg-coffee-950 text-cream pt-16 pb-8 border-t border-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded bg-gold flex items-center justify-center text-coffee-950 font-bold text-lg">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <span class="font-serif text-lg font-bold text-cream">SOWMIYA ENTERPRISES</span>
+                    </div>
+                    <p class="text-xs text-coffee-200 leading-relaxed">
+                        Independent distribution business established in 2018 in Tirupati, Andhra Pradesh. Supplying genuine chocolates, coffee powders, beverage premixes, milk powders, and coffee vending machine solutions.
+                    </p>
+                    <p class="text-xs text-gold font-bold">Proprietor: Mr. V. Sundareshan (Managed with Sangeetha)</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs font-serif font-bold text-gold uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-coffee-200">
+                        <li><a href="#about" class="hover:text-gold transition-colors">About Sowmiya Enterprises</a></li>
+                        <li><a href="#products" class="hover:text-gold transition-colors">B2B Products & Order Builder</a></li>
+                        <li><a href="#vending" class="hover:text-gold transition-colors">Coffee Vending Machine Solutions</a></li>
+                        <li><a href="#godown" class="hover:text-gold transition-colors">Tirupati Godown Facility</a></li>
+                        <li><a href="#technician" class="hover:text-gold transition-colors">Technician Support Services</a></li>
+                        <li><a href="#clients" class="hover:text-gold transition-colors">Who We Serve</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs font-serif font-bold text-gold uppercase tracking-wider">Contact & Location</h4>
+                    <div class="space-y-2 text-xs text-coffee-200">
+                        <p><i class="fa-solid fa-user text-gold me-2"></i> Mr. V. Sundareshan</p>
+                        <p><i class="fa-solid fa-location-dot text-gold me-2"></i> Tirupati, Andhra Pradesh, India</p>
+                        <p><i class="fa-solid fa-phone text-gold me-2"></i> Direct Phone: <a href="tel:9390488777" class="hover:text-gold font-bold">9390488777</a></p>
+                        <p><i class="fa-brands fa-whatsapp text-emerald-400 me-2"></i> WhatsApp: 919390488777</p>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-xs font-serif font-bold text-gold uppercase tracking-wider">Digital Reach</h4>
+                    <p class="text-xs text-coffee-200">Connect with Sowmiya Enterprises for commercial distribution inquiries.</p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://wa.me/919390488777" target="_blank" class="w-9 h-9 rounded-full bg-coffee-900 hover:bg-gold hover:text-coffee-950 border border-gold/30 flex items-center justify-center transition-colors text-gold">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919390488777" target="_blank" class="w-9 h-9 rounded-full bg-coffee-900 hover:bg-gold hover:text-coffee-950 border border-gold/30 flex items-center justify-center transition-colors text-gold">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/919390488777" target="_blank" class="w-9 h-9 rounded-full bg-coffee-900 hover:bg-gold hover:text-coffee-950 border border-gold/30 flex items-center justify-center transition-colors text-gold">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="https://wa.me/919390488777" target="_blank" class="w-9 h-9 rounded-full bg-coffee-900 hover:bg-emerald-600 hover:text-white border border-gold/30 flex items-center justify-center transition-colors text-emerald-400">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MANDATORY TRADEMARK & LEGAL DISCLAIMER -->
+            <div class="pt-8 border-t border-coffee-800 text-center space-y-4">
+                <div class="bg-coffee-900/90 p-4 rounded-2xl border border-gold/20 max-w-4xl mx-auto text-[11px] text-gray-400 leading-relaxed">
+                    <p class="font-bold text-gold mb-1 uppercase tracking-wider">TRADEMARK & LEGAL DISCLAIMER</p>
+                    "Sowmiya Enterprises is an independently operated distribution business based in Tirupati, Andhra Pradesh. This website is not the official corporate website of Nestlé India Limited. Brand and product names mentioned are the trademarks of their respective owners and are used only to identify the products handled by our business. No ownership or endorsement of third-party trademarks is claimed."
+                </div>
+
+                <div class="text-xs text-coffee-200 flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto px-2">
+                    <p>© 2018 - 2026 Sowmiya Enterprises. All Rights Reserved.</p>
+                    <p class="text-[11px] text-gray-400">Tirupati, Andhra Pradesh, India</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // DISMISS INTRO ANIMATION AFTER ~2.8s AUTOMATICALLY OR ON CLICK
+        function dismissIntro() {
+            const intro = document.getElementById('namam-intro');
+            if (intro) {
+                intro.style.opacity = '0';
+                intro.style.pointerEvents = 'none';
+                setTimeout(() => {
+                    intro.remove();
+                }, 700);
+            }
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(dismissIntro, 2800);
+        });
+
+        // MOBILE MENU TOGGLE
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // CATEGORY FILTERING LOGIC
+        function filterCategory(cat) {
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-coffee-800', 'text-gold');
+                btn.classList.add('bg-white', 'text-coffee-900');
+            });
+
+            const activeBtn = document.querySelector(`.cat-btn[data-cat="${cat}"]`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-coffee-900');
+                activeBtn.classList.add('bg-coffee-800', 'text-gold');
+            }
+
+            const cards = document.querySelectorAll('.prod-card');
+            cards.forEach(card => {
+                if (cat === 'all' || card.getAttribute('data-category') === cat) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // B2B ORDER DRAWER (CART) STATE & FUNCTIONS
+        let cartState = [];
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-drawer-overlay');
+            drawer.classList.toggle('translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+
+        function addToCart(productName, category) {
+            const existing = cartState.find(item => item.name === productName);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cartState.push({ name: productName, category: category, qty: 1 });
+            }
+            updateCartUI();
+            
+            const drawer = document.getElementById('cart-drawer');
+            if (drawer.classList.contains('translate-x-full')) {
+                toggleCartDrawer();
+            }
+        }
+
+        function updateCartQty(index, change) {
+            cartState[index].qty += change;
+            if (cartState[index].qty <= 0) {
+                cartState.splice(index, 1);
+            }
+            updateCartUI();
+        }
+
+        function clearCart() {
+            cartState = [];
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const container = document.getElementById('cart-items-container');
+            const badgeDesktop = document.getElementById('cart-badge-count');
+            const badgeMobile = document.getElementById('cart-badge-count-mobile');
+            const totalLinesLabel = document.getElementById('cart-total-lines');
+
+            const totalLines = cartState.length;
+            badgeDesktop.innerText = totalLines;
+            badgeMobile.innerText = totalLines;
+            totalLinesLabel.innerText = `${totalLines} Lines`;
+
+            if (totalLines === 0) {
+                container.innerHTML = `<p class="text-xs text-coffee-200 text-center py-8 italic">Your quote drawer is empty. Click "+ Add to B2B Order" on products to build your custom wholesale request!</p>`;
+                return;
+            }
+
+            let html = '';
+            cartState.forEach((item, idx) => {
+                html += `
+                    <div class="bg-coffee-800 p-3 rounded-xl border border-gold/20 flex items-center justify-between text-xs">
+                        <div>
+                            <p class="font-bold text-cream">${item.name}</p>
+                            <p class="text-[10px] text-gold">${item.category}</p>
+                        </div>
+                        <div class="flex items-center gap-2 bg-coffee-950 px-2 py-1 rounded-lg border border-gold/30">
+                            <button onclick="updateCartQty(${idx}, -1)" class="text-gold font-bold px-1.5 hover:text-white">-</button>
+                            <span class="font-bold text-white">${item.qty} ${item.qty === 1 ? 'Case/Unit' : 'Cases/Units'}</span>
+                            <button onclick="updateCartQty(${idx}, 1)" class="text-gold font-bold px-1.5 hover:text-white">+</button>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        function sendCartWhatsApp() {
+            if (cartState.length === 0) {
+                alert('Please add at least one product line to your B2B order drawer first!');
+                return;
+            }
+
+            let orderText = 'Hello Sowmiya Enterprises,%0A%0A' +
+                'I would like to request a wholesale quotation for the following items:%0A%0A';
+
+            cartState.forEach((item, i) => {
+                orderText += `${i + 1}. *${encodeURIComponent(item.name)}* - ${item.qty} Case(s)/Unit(s)%0A`;
+            });
+
+            orderText += '%0APlease share pricing, batch availability, and delivery timeline for my business.';
+
+            window.open(`https://wa.me/919390488777?text=${orderText}`, '_blank');
+        }
+
+        // VENDING MACHINE RECOMMENDER LOGIC
+        function recommendMachine() {
+            const val = document.getElementById('staff-size-select').value;
+            const title = document.getElementById('rec-title');
+            const desc = document.getElementById('rec-desc');
+
+            if (val === 'small') {
+                title.innerText = 'Recommended: Dual-Option Coffee & Tea Machine';
+                desc.innerText = 'Compact dual-canister dispenser ideal for CA offices and professional workplaces requiring hot coffee and tea.';
+            } else if (val === 'medium') {
+                title.innerText = 'Recommended: 3-Option or 4-Option Multi-Beverage Machine';
+                desc.innerText = 'Multi-option dispenser for corporate offices serving Coffee, Tea, Lemon Tea, and Hot Milk.';
+            } else if (val === 'large') {
+                title.innerText = 'Recommended: High-Capacity Heavy Duty Vending Unit';
+                desc.innerText = 'Heavy-duty commercial unit engineered for high-frequency consumption in manufacturing plants & factory canteens.';
+            } else if (val === 'railway') {
+                title.innerText = 'Recommended: Fast-Extraction Commercial Dispenser';
+                desc.innerText = 'Engineered for continuous fast extraction speed at railway station stalls and busy refreshment counters.';
+            }
+        }
+
+        function enquireRecommendedMachine() {
+            const title = document.getElementById('rec-title').innerText;
+            const msg = `Hello Sowmiya Enterprises,%0A%0AI would like to enquire about coffee vending machine supply: *${encodeURIComponent(title)}*. Please share specifications and pricing.`;
+            window.open(`https://wa.me/919390488777?text=${msg}`, '_blank');
+        }
+
+        // LIGHTBOX FUNCTIONALITY
+        function openLightbox(imgSrc, captionText) {
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox-caption').innerText = captionText;
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        // FAQ ACCORDION TOGGLE
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            content.classList.toggle('hidden');
+            if (content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // CONTACT FORM SUBMISSION HANDLER
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value.trim();
+            const company = document.getElementById('form-company').value.trim();
+            const mobile = document.getElementById('form-mobile').value.trim();
+            const district = document.getElementById('form-district').value.trim();
+            const product = document.getElementById('form-product').value;
+            const userMsg = document.getElementById('form-message').value.trim();
+
+            const message = `Hello Sowmiya Enterprises,%0A%0A` +
+                `I would like to send a distribution enquiry:%0A%0A` +
+                `*Contact Name:* ${encodeURIComponent(name)}%0A` +
+                `*Company Name:* ${encodeURIComponent(company)}%0A` +
+                `*Mobile Number:* ${encodeURIComponent(mobile)}%0A` +
+                `*District:* ${encodeURIComponent(district)}%0A` +
+                `*Required Item:* ${encodeURIComponent(product)}%0A` +
+                `*Message Details:* ${encodeURIComponent(userMsg || 'N/A')}`;
+
+            window.open(`https://wa.me/919390488777?text=${message}`, '_blank');
+        }
+
+        // AUTOMATED CHATBOT LOGIC
+        function toggleChatbot() {
+            const windowEl = document.getElementById('chat-window');
+            windowEl.classList.toggle('hidden');
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chat-user-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendUserMessage(text);
+            input.value = '';
+
+            setTimeout(() => {
+                processBotQuery(text.toLowerCase());
+            }, 600);
+        }
+
+        function handleChatKeyPress(e) {
+            if (e.key === 'Enter') sendChatMessage();
+        }
+
+        function appendUserMessage(msg) {
+            const logs = document.getElementById('chat-logs');
+            logs.innerHTML += `
+                <div class="flex justify-end">
+                    <div class="bg-coffee-800 text-gold p-2.5 rounded-2xl rounded-tr-none max-w-[85%] font-medium">
+                        ${msg}
+                    </div>
+                </div>
+            `;
+            logs.scrollTop = logs.scrollHeight;
+        }
+
+        function appendBotMessage(msg) {
+            const logs = document.getElementById('chat-logs');
+            logs.innerHTML += `
+                <div class="flex justify-start">
+                    <div class="bg-coffee-100 border border-coffee-200 p-3 rounded-2xl rounded-tl-none max-w-[85%] text-coffee-950 space-y-1">
+                        ${msg}
+                    </div>
+                </div>
+            `;
+            logs.scrollTop = logs.scrollHeight;
+        }
+
+        function botQuickReply(type) {
+            if (type === 'products') {
+                appendUserMessage('Show Product Lines');
+                appendBotMessage('We supply genuine KitKat, Munch, Milkybar, Nescafé coffee powder, Nestea premixes, Signature Lemon Tea, and milk whitener. Use our B2B Order Drawer to build a custom quote!');
+            } else if (type === 'bulk') {
+                appendUserMessage('Wholesale Bulk Orders');
+                appendBotMessage('We deliver bulk cases to Tirupati, Chittoor, Nellore, Kadapa, Anantapur, Vijayawada, Visakhapatnam, and all AP districts. Contact founder V. Sundareshan directly at +91 9390488777.');
+            } else if (type === 'vending') {
+                appendUserMessage('Vending Machine Enquiries');
+                appendBotMessage('We provide dual-option, 3-option, and high-capacity coffee vending machines along with premix bags for CA offices, corporate hubs, factories, and railway stalls.');
+            } else if (type === 'technician') {
+                appendUserMessage('Technician Support');
+                appendBotMessage('Sowmiya Enterprises offers technician support, cleaning guidance, and troubleshooting for installed vending units across Andhra Pradesh.');
+            }
+        }
+
+        function processBotQuery(q) {
+            if (q.includes('price') || q.includes('cost') || q.includes('rate')) {
+                appendBotMessage('For accurate B2B wholesale pricing based on your required volume, please add products to your B2B Quote Drawer or click <a href="https://wa.me/919390488777" target="_blank" class="text-emerald-700 font-bold underline">WhatsApp Direct Handoff</a>.');
+            } else if (q.includes('location') || q.includes('address') || q.includes('where')) {
+                appendBotMessage('Our primary distribution godown and office are located in Tirupati, Andhra Pradesh, established in 2018.');
+            } else if (q.includes('vending') || q.includes('machine')) {
+                botQuickReply('vending');
+            } else if (q.includes('contact') || q.includes('phone') || q.includes('call')) {
+                appendBotMessage('You can call proprietor Mr. V. Sundareshan directly at <strong>+91 9390488777</strong> or message on WhatsApp.');
+            } else {
+                appendBotMessage('Thank you for your enquiry! For instant human assistance with proprietor Mr. V. Sundareshan, click below:<br><br><a href="https://wa.me/919390488777?text=Hello%20Sowmiya%20Enterprises%2C%20I%20have%20a%20customer%20query." target="_blank" class="inline-block bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-lg text-[11px]"><i class="fa-brands fa-whatsapp me-1"></i> WhatsApp Human Agent</a>');
+            }
+        }
+    </script>
+</body>
+</html>

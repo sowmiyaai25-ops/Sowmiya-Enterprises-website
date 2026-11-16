@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Sowmiya Enterprises 3D - Nestlé Distributor \u0026 Coffee Vending",
+  "description": "Premier B2B distributor of genuine Nestlé products and commercial coffee vending machines in Tirupati, Andhra Pradesh with interactive 3D visuals, floating coffee beans, and godown facility.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
